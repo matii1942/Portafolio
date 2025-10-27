@@ -1,0 +1,120 @@
+/* src/components/Hero.css */
+
+.hero-section {
+  text-align: center; /* Centrar todo el contenido */
+  padding: 80px 0; /* Más padding arriba y abajo */
+  max-width: 800px; /* Para que el contenido no se extienda demasiado */
+  margin: 0 auto;
+}
+
+.download-cv-btn {
+  background: none;
+  border: 1px solid var(--color-borde-card);
+  color: var(--color-texto-secundario);
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.download-cv-btn:hover {
+  background-color: var(--color-borde-card);
+  color: var(--color-texto-principal);
+}
+
+.hero-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--color-texto-secundario);
+  margin-bottom: 5px;
+}
+
+.hero-name {
+  font-size: 4rem; /* Tamaño grande para el nombre */
+  font-weight: 700;
+  color: var(--color-acento-texto); /* Color dorado para el nombre */
+  line-height: 1.1;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.hero-description {
+  font-size: 1.1rem;
+  color: var(--color-texto-secundario);
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+}
+
+.social-links {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Espacio entre los botones sociales */
+}
+
+.social-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+.social-btn.linkedin {
+  background-color: #0077b5; /* Color de LinkedIn */
+  color: white;
+}
+.social-btn.linkedin:hover {
+  background-color: #005f91;
+  transform: translateY(-2px);
+}
+
+.social-btn.github {
+  background-color: #333; /* Color de GitHub */
+  color: white;
+}
+.social-btn.github:hover {
+  background-color: #1a1a1a;
+  transform: translateY(-2px);
+}
+
+.tech-icons {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap; /* Para que los iconos se ajusten en varias líneas */
+  justify-content: center;
+  gap: 15px;
+}
+
+.tech-icon {
+  background-color: var(--color-card-fondo);
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  color: var(--color-texto-secundario);
+  border: 1px solid var(--color-borde-card);
+}
+
+/* Media Queries para responsividad, si lo deseas */
+@media (max-width: 768px) {
+  .hero-name {
+    font-size: 2.8rem;
+  }
+  .hero-title {
+    font-size: 1.5rem;
+  }
+  .social-links {
+    flex-direction: column; /* Botones sociales uno debajo del otro en móviles */
+    gap: 10px;
+  }
+  .social-btn {
+    width: 80%; /* Ancho completo para botones en móvil */
+    margin: 0 auto;
+    justify-content: center;
+  }
+}

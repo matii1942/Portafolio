@@ -1,0 +1,63 @@
+/* src/components/Skills.css */
+
+.skills-section {
+  padding: 60px 0;
+  text-align: center;
+}
+
+/* Reutilizamos los estilos de section-subtitle y section-title de Projects.css */
+.skills-section .section-subtitle {
+  font-size: 0.9rem;
+  color: var(--color-texto-secundario);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+}
+
+.skills-section .section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-texto-principal);
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Columnas ajustables */
+  gap: 20px;
+  max-width: 900px; /* Limitar el ancho de la cuadrícula de habilidades */
+  margin: 0 auto;
+}
+
+.skill-card {
+  background-color: var(--color-card-fondo);
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid var(--color-borde-card);
+  transition: transform 0.3s, border-color 0.3s;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--color-acento-texto);
+}
+
+.skill-icon {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  display: block; /* Para que el icono esté en su propia línea */
+}
+
+.skill-card h3 {
+  font-size: 1.2rem;
+  margin-top: 0;
+  margin-bottom: 5px;
+  color: var(--color-texto-principal);
+}
+
+.skill-card p {
+  font-size: 0.85rem;
+  color: var(--color-texto-secundario);
+}

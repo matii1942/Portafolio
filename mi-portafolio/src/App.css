@@ -1,0 +1,27 @@
+:root {
+  --color-fondo: #1a1a1a;
+  --color-texto-principal: #ffffff; 
+  --color-texto-secundario: #a0a0a0; 
+  --color-acento-texto: #ffd700; 
+  --color-card-fondo: #282828; 
+  --color-borde-card: #444; 
+  --font-principal: 'Inter', sans-serif; 
+  --font-secundaria: 'Roboto', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-principal);
+  background-color: var(--color-fondo);
+  color: var(--color-texto-principal);
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+
+.portfolio-container {
+  max-width: 1000px; 
+  margin: 0 auto;
+  padding: 40px 20px; 
+}
