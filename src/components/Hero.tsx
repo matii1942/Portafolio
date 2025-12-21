@@ -30,7 +30,7 @@ export const Hero: React.FC = () => {
         {/* Enlaces a redes sociales */}
         <div className="social-links">
           <a
-            href="https://www.linkedin.com/in/tu-perfil/"
+            href="https://www.linkedin.com/in/matias-ariel-acosta-50903b207"
             target="_blank"
             rel="noopener noreferrer"
             className="social-btn linkedin"
@@ -38,7 +38,7 @@ export const Hero: React.FC = () => {
             LinkedIn →
           </a>
           <a
-            href="https://github.com/tu-usuario/"
+            href="https://github.com/matii1942"
             target="_blank"
             rel="noopener noreferrer"
             className="social-btn github"
