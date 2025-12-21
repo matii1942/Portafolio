@@ -15,15 +15,15 @@ export const Hero: React.FC = () => {
 
         {/* Título y nombre */}
         <h2 className="hero-title">
-          Full Stack Developer
+          Analista de Sistemas / Full Stack Developer
         </h2>
-        <h1 className="hero-name">
+        <h1 className="hero-name">  
           Matías Acosta
         </h1>
 
         {/* Descripción breve */}
         <p className="hero-description">
-          Desarrollador apasionado por crear soluciones web innovadoras y eficientes,
+          Analista de Sistemas en formacion y desarrollador web apasionado por crear soluciones web innovadoras y eficientes,
           desde el front-end hasta el back-end.
         </p>
 

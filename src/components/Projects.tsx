@@ -15,7 +15,7 @@ const projectLinks: ProjectLink[] = [
   {
     title: 'Proyecto E-commerce',
     description: 'Tienda online completa con pasarela de pagos integrada.',
-    url: 'https://www.enlace-al-proyecto1.com',
+    url: 'http://localhost:3000',
     icon: '🛒',
   },
   {
