@@ -1,9 +1,7 @@
-/* src/components/Hero.css */
-
 .hero-section {
-  text-align: center; /* Centrar todo el contenido */
-  padding: 80px 0; /* Más padding arriba y abajo */
-  max-width: 800px; /* Para que el contenido no se extienda demasiado */
+  text-align: center; 
+  padding: 80px 0; 
+  max-width: 800px; 
   margin: 0 auto;
 }
 
@@ -32,9 +30,9 @@
 }
 
 .hero-name {
-  font-size: 4rem; /* Tamaño grande para el nombre */
+  font-size: 4rem; 
   font-weight: 700;
-  color: var(--color-acento-texto); /* Color dorado para el nombre */
+  color: var(--color-acento-texto); 
   line-height: 1.1;
   margin-top: 0;
   margin-bottom: 20px;
@@ -51,7 +49,7 @@
   margin-top: 30px;
   display: flex;
   justify-content: center;
-  gap: 15px; /* Espacio entre los botones sociales */
+  gap: 15px; 
 }
 
 .social-btn {
@@ -66,7 +64,7 @@
 }
 
 .social-btn.linkedin {
-  background-color: #0077b5; /* Color de LinkedIn */
+  background-color: #0077b5; 
   color: white;
 }
 .social-btn.linkedin:hover {
@@ -75,7 +73,7 @@
 }
 
 .social-btn.github {
-  background-color: #333; /* Color de GitHub */
+  background-color: #333; 
   color: white;
 }
 .social-btn.github:hover {
@@ -86,7 +84,7 @@
 .tech-icons {
   margin-top: 40px;
   display: flex;
-  flex-wrap: wrap; /* Para que los iconos se ajusten en varias líneas */
+  flex-wrap: wrap; 
   justify-content: center;
   gap: 15px;
 }
@@ -100,7 +98,7 @@
   border: 1px solid var(--color-borde-card);
 }
 
-/* Media Queries para responsividad, si lo deseas */
+
 @media (max-width: 768px) {
   .hero-name {
     font-size: 2.8rem;
@@ -109,11 +107,11 @@
     font-size: 1.5rem;
   }
   .social-links {
-    flex-direction: column; /* Botones sociales uno debajo del otro en móviles */
+    flex-direction: column; 
     gap: 10px;
   }
   .social-btn {
-    width: 80%; /* Ancho completo para botones en móvil */
+    width: 80%; 
     margin: 0 auto;
     justify-content: center;
   }

@@ -1,4 +1,4 @@
-// src/components/Hero.tsx
+
 
 import React from 'react';
 import './Hero.css';
@@ -8,12 +8,10 @@ export const Hero: React.FC = () => {
     <section className="hero-section">
       <div className="hero-content">
         
-        {/* Botón "Descargar CV" */}
         <button className="download-cv-btn">
           Descargar CV
         </button>
 
-        {/* Título y nombre */}
         <h2 className="hero-title">
           Analista de Sistemas / Full Stack Developer
         </h2>
@@ -21,13 +19,12 @@ export const Hero: React.FC = () => {
           Matías Acosta
         </h1>
 
-        {/* Descripción breve */}
         <p className="hero-description">
           Analista de Sistemas en formacion y desarrollador web apasionado por crear soluciones web innovadoras y eficientes,
           desde el front-end hasta el back-end.
         </p>
 
-        {/* Enlaces a redes sociales */}
+        
         <div className="social-links">
           <a
             href="https://www.linkedin.com/in/matias-ariel-acosta-50903b207"
@@ -46,8 +43,7 @@ export const Hero: React.FC = () => {
             Github →
           </a>
         </div>
-
-        {/* Íconos de tecnologías */}
+        
         <div className="tech-icons">
           <span className="tech-icon">⚛️ React</span>
           <span className="tech-icon">🅰️ Angular</span>

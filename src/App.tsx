@@ -8,9 +8,9 @@ const App: React.FC = () => {
   return (
     <div className="portfolio-container">
       <main>
-        <Hero />      {/* Tu introducción y foto */}
-        <Skills />    {/* Sección de habilidades */}
-        <Projects />  {/* Los enlaces a las 3 ventanas */}
+        <Hero />      
+        <Skills />    
+        <Projects />  
       </main>
     </div>
   );

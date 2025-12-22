@@ -1,9 +1,8 @@
-// src/components/Projects.tsx
+
 
 import React from 'react';
 import './Projects.css';
 
-// Interfaz para tipar los enlaces de proyectos
 interface ProjectLink {
   title: string;
   description: string;
@@ -15,7 +14,7 @@ const projectLinks: ProjectLink[] = [
   {
     title: 'Proyecto E-commerce',
     description: 'Tienda online completa con pasarela de pagos integrada.',
-    url: 'http://localhost:3000',
+    url: 'https://e-commerce-1-wcxq.onrender.com',
     icon: '🛒',
   },
   {
@@ -38,7 +37,6 @@ export const Projects: React.FC = () => {
       <h3 className="section-subtitle">PROYECTOS</h3>
       <h2 className="section-title">Mis proyectos destacados</h2>
       
-      {/* Filtros de ejemplo */}
       <div className="project-filters">
         <button className="filter-btn active">Todos</button>
         <button className="filter-btn">Full Stack</button>
