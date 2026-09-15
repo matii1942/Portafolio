@@ -21,7 +21,7 @@ const projectLinks: ProjectLink[] = [
     title: 'ELD Trip Planner',
     description: 'Planificador de viajes con funcionalidades de reserva e itinerario.',
     url: 'https://eld-trip-planner-livid-tau.vercel.app/',
-    icon: 'icon-trip',
+    icon: '🚚',
   },
   {
     title: 'Clon de Red Social',
