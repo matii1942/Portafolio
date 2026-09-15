@@ -18,10 +18,10 @@ const projectLinks: ProjectLink[] = [
     icon: '🛒',
   },
   {
-    title: 'Aplicación de Tareas',
-    description: 'Gestor de tareas con persistencia de datos local.',
-    url: 'https://www.enlace-al-proyecto2.com',
-    icon: '✅',
+    title: 'ELD Trip Planner',
+    description: 'Planificador de viajes con funcionalidades de reserva e itinerario.',
+    url: 'https://eld-trip-planner-livid-tau.vercel.app/',
+    icon: 'icon-trip',
   },
   {
     title: 'Clon de Red Social',
