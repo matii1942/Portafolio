@@ -24,6 +24,12 @@ const projectLinks: ProjectLink[] = [
     icon: '🚚',
   },
   {
+    title: 'Game Neon Swarm',
+    description: 'Juego arcade de acción y supervivencia.',
+    url: 'https://matii1942.github.io/Neon-Swarm/',
+    icon: '🎮',
+  },
+  {
     title: 'Clon de Red Social',
     description: 'Interfaz de usuario inspirada en una red social popular.',
     url: 'https://www.enlace-al-proyecto3.com',
