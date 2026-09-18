@@ -1,0 +1,183 @@
+/* ------------------------------------------------------------------
+   Design tokens + page shell + shared section chrome.
+   Component-specific rules live in each component's own CSS file.
+   ------------------------------------------------------------------ */
+
+:root {
+  --paper: #e9ecf1;
+  --card: #f7f8fb;
+  --card-2: #eef1f6;
+  --ink: #0d1018;
+  --ink-2: #4d5566;
+  --ink-3: #7d8699;
+  --line: #c6ccd8;
+  --line-soft: #d8dde6;
+  --accent: #1733e6;
+  --accent-soft: rgba(23, 51, 230, 0.09);
+  --on-accent: #ffffff;
+
+  --mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  --sans: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --serif: "Newsreader", Georgia, "Times New Roman", serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #090b11;
+    --card: #11141d;
+    --card-2: #161a25;
+    --ink: #e7eaf2;
+    --ink-2: #9aa3b7;
+    --ink-3: #6b7488;
+    --line: #242a38;
+    --line-soft: #1b202b;
+    --accent: #7e95ff;
+    --accent-soft: rgba(126, 149, 255, 0.12);
+    --on-accent: #070910;
+  }
+}
+
+:root[data-theme="dark"] {
+  --paper: #090b11;
+  --card: #11141d;
+  --card-2: #161a25;
+  --ink: #e7eaf2;
+  --ink-2: #9aa3b7;
+  --ink-3: #6b7488;
+  --line: #242a38;
+  --line-soft: #1b202b;
+  --accent: #7e95ff;
+  --accent-soft: rgba(126, 149, 255, 0.12);
+  --on-accent: #070910;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 16.5px;
+  line-height: 1.65;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--on-accent);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+/* ---------- shell ---------- */
+
+.shell {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-block: 0 64px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+
+@media (min-width: 960px) {
+  .shell {
+    grid-template-columns: 352px 1fr;
+    gap: 56px;
+    padding-block: 0 96px;
+  }
+}
+
+.content {
+  padding-block: 8px 0;
+  min-width: 0;
+}
+
+@media (min-width: 960px) {
+  .content {
+    padding-block: 64px 0;
+  }
+}
+
+/* ---------- shared section chrome ---------- */
+
+.content section {
+  padding-block: 38px;
+  border-top: 1px solid var(--line-soft);
+}
+
+.content section:first-child {
+  border-top: 0;
+  padding-top: 8px;
+}
+
+.s-head {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  margin-bottom: 22px;
+}
+
+.s-head h2 {
+  font-family: var(--sans);
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 0.02em;
+  margin: 0;
+}
+
+.s-head .tag {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  border: 1px solid var(--line-soft);
+  padding: 3px 7px;
+}
+
+.lead {
+  font-size: clamp(20px, 2.6vw, 25px);
+  line-height: 1.5;
+  margin: 0 0 20px;
+  max-width: 42ch;
+  font-weight: 300;
+}
+
+.lead b {
+  font-weight: 400;
+  font-style: italic;
+}
+
+.note {
+  font-size: 15px;
+  color: var(--ink-2);
+  max-width: 62ch;
+  margin: 0;
+}
+
+.arw {
+  display: inline-block;
+  transition: transform 0.16s;
+}
+
+.site-footer {
+  margin-top: 44px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line-soft);
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--ink-3);
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+}

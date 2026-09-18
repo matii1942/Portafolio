@@ -1,0 +1,49 @@
+.job {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4px;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--line-soft);
+}
+
+.job:first-of-type {
+  border-top: 1px solid var(--line-soft);
+}
+
+.job-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.job h3 {
+  font-family: var(--sans);
+  font-weight: 600;
+  font-size: 16px;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+.job-when {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--ink-3);
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+.job-org {
+  font-family: var(--mono);
+  font-size: 11.5px;
+  color: var(--accent);
+  margin: 0;
+}
+
+.job-desc {
+  margin: 6px 0 0;
+  font-size: 15px;
+  color: var(--ink-2);
+  max-width: 62ch;
+}

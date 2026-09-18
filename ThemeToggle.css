@@ -1,0 +1,20 @@
+.theme-toggle {
+  position: fixed;
+  right: 14px;
+  top: calc(14px + env(safe-area-inset-top, 0px));
+  z-index: 9;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  padding: 9px 12px;
+  cursor: pointer;
+  border: 1px solid var(--line);
+  background: var(--card);
+  color: var(--ink-2);
+  transition: border-color 0.16s, color 0.16s;
+}
+
+.theme-toggle:hover {
+  border-color: var(--accent);
+  color: var(--ink);
+}

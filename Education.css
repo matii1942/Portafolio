@@ -1,0 +1,43 @@
+.background-grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 560px) {
+  .background-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.background-box {
+  border: 1px solid var(--line-soft);
+  background: var(--card);
+  padding: 17px 18px;
+}
+
+.background-box h3 {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  margin: 0 0 10px;
+  font-weight: 500;
+}
+
+.background-box ul {
+  margin: 0;
+  padding-left: 17px;
+  font-size: 15px;
+  color: var(--ink-2);
+}
+
+.background-box li {
+  margin-bottom: 5px;
+}
+
+.background-box li b {
+  color: var(--ink);
+  font-weight: 400;
+}
