@@ -1,0 +1,47 @@
+.contact-intro {
+  margin-bottom: 18px;
+}
+
+.contact-grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 560px) {
+  .contact-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.contact-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  border: 1px solid var(--line-soft);
+  background: var(--card);
+  padding: 15px 17px;
+  transition: border-color 0.16s, background 0.16s;
+}
+
+.contact-row:hover {
+  border-color: var(--accent);
+  background: var(--card-2);
+}
+
+.contact-row b {
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.contact-row span {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--ink-3);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

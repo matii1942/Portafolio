@@ -1,35 +1,35 @@
 import React from 'react';
 import './Skills.css';
 
-
-interface Skill {
-  name: string;
-  level: string;
-  icon: string;
+interface SkillGroup {
+  label: string;
+  items: string[];
 }
 
-const skillList: Skill[] = [
-  { name: 'React', level: 'Avanzado', icon: '⚛️' },
-  { name: 'JavaScript', level: 'Avanzado', icon: '📜' },
-  { name: 'HTML5 & CSS3', level: 'Avanzado', icon: '💻' },
-  { name: 'Node.js', level: 'Intermedio', icon: '🟢' },
-  { name: 'Java', level: 'Intermedio', icon: '☕' },
-  { name: 'Spring Boot', level: 'Intermedio', icon: '🌱' },
-  { name: 'SQL / PostgreSQL', level: 'Intermedio', icon: '🐘' },
-  { name: 'Git', level: 'Avanzado', icon: '🐙' },
+const skillGroups: SkillGroup[] = [
+  { label: 'Languages', items: ['JavaScript (ES6+)', 'TypeScript', 'Python', 'SQL', 'HTML5', 'CSS3'] },
+  { label: 'Frontend', items: ['React', 'Component architecture', 'Responsive design'] },
+  { label: 'Backend', items: ['Node.js', 'Express.js', 'Django', 'REST APIs', 'CRUD'] },
+  { label: 'Databases', items: ['MongoDB', 'MySQL', 'Oracle'] },
+  { label: 'Tools', items: ['Git', 'GitHub', 'Postman', 'Render', 'Vercel', 'HubSpot'] },
 ];
 
 export const Skills: React.FC = () => {
   return (
-    <section className="skills-section">
-      <h3 className="section-subtitle">MIS HERRAMIENTAS</h3>
-      <h2 className="section-title">Habilidades Técnicas</h2>
-      <div className="skills-grid">
-        {skillList.map((skill) => (
-          <div key={skill.name} className="skill-card">
-            <span className="skill-icon">{skill.icon}</span>
-            <h3>{skill.name}</h3>
-            <p>{skill.level}</p>
+    <section id="stack">
+      <div className="s-head">
+        <span className="tag">Stack</span>
+        <h2>Technical skills</h2>
+      </div>
+      <div className="stack-list">
+        {skillGroups.map((group) => (
+          <div className="stack-row" key={group.label}>
+            <span className="stack-key">{group.label}</span>
+            <span className="stack-val">
+              {group.items.map((item) => (
+                <span key={item}>{item}</span>
+              ))}
+            </span>
           </div>
         ))}
       </div>
