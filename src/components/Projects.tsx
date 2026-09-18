@@ -8,6 +8,8 @@ interface Project {
   title: string;
   description: string;
   url: string;
+  /** Optional repository link, shown as a second action on the card. */
+  sourceUrl?: string;
   category: Category;
   status: string;
   tags: string[];
@@ -18,18 +20,19 @@ const projects: Project[] = [
   {
     title: 'ELD Trip Planner',
     description:
-      'Calculates truck routes across the US and schedules driving time, rest breaks and fuel stops under FMCSA Hours of Service rules. Django API on Render, JavaScript frontend on Vercel.',
+      'Calculates truck routes across the US and schedules driving time, rest breaks and fuel stops under 11 FMCSA regulations. Django API on Render, JavaScript front end on Vercel, 56 automated tests across both stacks.',
     url: 'https://eld-trip-planner-livid-tau.vercel.app/',
     category: 'full',
     status: 'Live',
-    tags: ['Python', 'Django', 'REST API', 'Vercel'],
+    tags: ['Python', 'Django', 'pytest', 'REST API', 'Vercel'],
     cta: 'View project',
   },
   {
     title: 'E-Commerce Application',
     description:
-      'Storefront with product listing, cart and dynamic data from the backend, built on a component architecture and responsive across every view.',
+      'Storefront with a 50-product catalog, cart and dynamic data handling from the backend, built on a component architecture and responsive across every view.',
     url: 'https://e-commerce-1-wcxq.onrender.com',
+    sourceUrl: 'https://github.com/matii1942/ecommerce',
     category: 'full',
     status: 'Live',
     tags: ['React', 'Node.js', 'MongoDB', 'Render'],
@@ -38,7 +41,7 @@ const projects: Project[] = [
   {
     title: 'Task Manager',
     description:
-      'Full CRUD task management backed by a REST API and MongoDB, with reusable TypeScript components handling form validation, state and API errors.',
+      'Full CRUD task management across 15 REST endpoints backed by MongoDB, with reusable TypeScript components handling form validation, state and API errors.',
     url: 'https://github.com/matii1942',
     category: 'full',
     status: 'Source',
@@ -48,10 +51,11 @@ const projects: Project[] = [
   {
     title: 'Neon Swarm',
     description:
-      'Galaga-style arcade game: 40 enemies in formation, dive-bomb attacks, tractor-beam captures and power-ups, rendered on Canvas at 60 fps.',
-    url: 'https://matii1942.github.io/Neon-Swarm/',
+      'Galaga-style arcade game: 40 enemies in formation, dive-bomb attacks, tractor-beam captures and power-ups, rendered on Canvas at 60 fps. Published on itch.io.',
+    url: 'https://matii1942.itch.io/neon-swarm',
+    sourceUrl: 'https://github.com/matii1942/Neon-Swarm',
     category: 'front',
-    status: 'Live',
+    status: 'On itch.io',
     tags: ['React', 'Canvas', 'Web Audio'],
     cta: 'Play now',
   },
@@ -93,13 +97,7 @@ export const Projects: React.FC = () => {
 
       <div className="projects-grid">
         {visible.map((project) => (
-          <a
-            key={project.title}
-            href={project.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="project-card"
-          >
+          <article className="project-card" key={project.title}>
             <div className="project-meta">
               <span>{project.category === 'full' ? 'Full Stack' : 'Frontend'}</span>
               <span>{project.status}</span>
@@ -111,10 +109,27 @@ export const Projects: React.FC = () => {
                 <span key={tag}>{tag}</span>
               ))}
             </div>
-            <div className="project-go">
-              {project.cta} <span className="arw">→</span>
+            <div className="project-actions">
+              <a
+                className="project-go"
+                href={project.url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {project.cta} <span className="arw">→</span>
+              </a>
+              {project.sourceUrl && (
+                <a
+                  className="project-source"
+                  href={project.sourceUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Source ↗
+                </a>
+              )}
             </div>
-          </a>
+          </article>
         ))}
       </div>
     </section>
