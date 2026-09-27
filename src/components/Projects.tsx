@@ -20,12 +20,13 @@ const projects: Project[] = [
   {
     title: 'VitaLink',
     description:
-      'Reads admissions and vital signs from a hospital legacy SOAP system and scores every round against the NEWS2 early-warning standard, so deterioration is not left waiting for a shift change. 358 automated tests, deployed to AWS with Terraform, and clinical summaries from a language model verified figure by figure against the record.',
-    url: 'https://github.com/matii1942/VitaLink',
+      'Reads admissions and vital signs from a hospital legacy SOAP system and scores every round against the NEWS2 early-warning standard, so deterioration is not left waiting for a shift change. 368 automated tests, deployed to AWS with Terraform, and clinical summaries from a language model verified figure by figure against the record.',
+    url: 'https://matii1942.github.io/VitaLink/',
+    sourceUrl: 'https://github.com/matii1942/VitaLink',
     category: 'full',
-    status: 'Source',
+    status: 'Live demo',
     tags: ['TypeScript', 'NestJS', 'PostgreSQL', 'React', 'AWS'],
-    cta: 'View source',
+    cta: 'Open the ward board',
   },
   {
     title: 'ELD Trip Planner',
