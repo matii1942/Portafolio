@@ -13,11 +13,13 @@ export const Profile: React.FC = () => {
       </p>
       <p className="note">
         My work runs from the interface people use to the database behind it: React and TypeScript on
-        the front, Node.js/Express or Django on the back, MongoDB and SQL for data, deployed on
-        Render and Vercel. Before development I spent ten years managing clinical data in an
-        intensive care unit, where traceability and accuracy were not optional — that is the
-        discipline I bring to code. My working hours overlap the full US business day and European
-        afternoons.
+        the front, NestJS, Node.js/Express or Django on the back, PostgreSQL and MongoDB for data,
+        deployed to AWS with Terraform or shipped to Render and Vercel. I write unit and integration
+        tests as part of the work, and when I integrate a language model I verify what it produces
+        against the source record rather than trusting it. Before development I spent ten years
+        managing clinical data in an intensive care unit, where traceability and accuracy were not
+        optional — that is the discipline I bring to code. My working hours overlap the full US
+        business day and European afternoons.
       </p>
     </section>
   );

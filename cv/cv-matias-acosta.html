@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Matias Ariel Acosta — CV</title>
+<!--
+  The CV, as a file you can edit.
+
+  It used to be a PDF with no source, which meant every change was a fight
+  with a binary. This is the same layout in HTML: change a line, open it in
+  the browser, print to PDF, and replace public/cv-matias-acosta.pdf.
+
+  Chrome → Ctrl+P → Destination "Save as PDF" → Margins "None"
+  → tick "Background graphics" → Save.
+-->
+<style>
+  @page { size: A4; margin: 13mm 14mm; }
+
+  :root {
+    --ink: #111;
+    --soft: #444;
+    --rule: #bbb;
+    --bar: #ececec;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    color: var(--ink);
+    font: 8.05pt/1.22 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .sheet { max-width: 182mm; margin: 0 auto; padding: 6mm 0; }
+  @media print { .sheet { padding: 0; } }
+
+  h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 17pt;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+  }
+
+  .headline, .contact, .links {
+    text-align: center;
+    color: var(--soft);
+  }
+
+  .headline {
+    margin-top: 3pt;
+    font-size: 8pt;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .contact { margin-top: 4pt; font-size: 8.4pt; }
+  .links { margin-top: 2pt; font-size: 8.4pt; }
+  .links a { color: var(--soft); text-decoration: none; }
+
+  h2 {
+    margin: 6pt 0 3pt;
+    padding: 2.5pt 5pt;
+    background: var(--bar);
+    border-radius: 1.5pt;
+    font-size: 8.2pt;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  p { margin: 0; }
+  .summary { text-align: justify; }
+
+  /* --- technical skills: label / value rows --- */
+  .skills { display: grid; grid-template-columns: 74pt 1fr; gap: 2pt 8pt; }
+  .skills dt { font-weight: 700; }
+  .skills dd { margin: 0; }
+
+  /* --- an entry: title left, meta right --- */
+  .entry { margin-top: 4pt; break-inside: avoid; }
+  .entry:first-of-type { margin-top: 0; }
+
+  .entry-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 10pt;
+  }
+
+  .entry-head .what { font-weight: 700; }
+  .entry-head .meta { color: var(--soft); font-size: 8.2pt; white-space: nowrap; }
+
+  .stack { color: var(--soft); font-style: italic; font-size: 8.4pt; margin-top: 1pt; }
+
+  ul { margin: 2pt 0 0; padding-left: 12pt; }
+  .compact { margin-top: 2pt; }
+  li { margin-top: 1.2pt; }
+
+  /* --- education and languages, side by side --- */
+  .two-up { display: grid; grid-template-columns: 1fr 1fr; gap: 14pt; }
+  .two-up h3 {
+    margin: 0 0 3pt;
+    font-size: 8pt;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--soft);
+  }
+  .two-up ul { margin-top: 0; }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <h1>MATIAS ARIEL ACOSTA</h1>
+  <p class="headline">Full Stack Developer · TypeScript · React · Node.js · Python/Django · AWS</p>
+  <p class="contact">Buenos Aires, Argentina (UTC−3) | +54 11 6573 7597 | matiasariel1986@hotmail.com</p>
+  <p class="links"><a href="https://linkedin.com/in/matias-ariel-acosta">linkedin.com/in/matias-ariel-acosta</a> | <a href="https://github.com/matii1942">github.com/matii1942</a> | <a href="https://portafolio-stnm.onrender.com">portafolio-stnm.onrender.com</a></p>
+
+  <h2>Summary</h2>
+  <p class="summary">
+    Full Stack Developer building web applications with TypeScript, React, Node.js and Python/Django — REST and SOAP
+    integrations deployed to production on AWS, Render and Vercel, with tests written as part of the work. Integrates
+    LLM APIs with attention to prompt design, token cost and verifying generated output against the source record.
+    A decade managing clinical data in an intensive care unit, where accuracy and traceability were not optional, is
+    the discipline he brings to code. Advanced English (C1); hours overlap the full US business day.
+  </p>
+
+  <h2>Technical Skills</h2>
+  <dl class="skills">
+    <dt>Languages</dt>      <dd>JavaScript (ES6+), TypeScript, Python, SQL, HTML5, CSS3</dd>
+    <dt>Frontend</dt>       <dd>React, Vite, Component-Based Architecture, Responsive Design, Accessible Data Visualisation</dd>
+    <dt>Backend</dt>        <dd>Node.js, NestJS, Express.js, Django, REST APIs, SOAP / XML Web Services, CRUD Operations</dd>
+    <dt>Databases</dt>      <dd>PostgreSQL, MongoDB, MySQL, Oracle, Prisma ORM</dd>
+    <dt>Cloud &amp; DevOps</dt> <dd>AWS (Lambda, RDS, VPC, EventBridge), Terraform, Docker, GitHub Actions, Render, Vercel, Git</dd>
+    <dt>Testing</dt>        <dd>Unit, integration and end-to-end with Vitest, Supertest, Testing Library, pytest; coverage; Postman</dd>
+    <dt>Performance</dt>    <dd>Query Optimisation and Indexing, Caching, Bundle Analysis, Front-End Load-Time Auditing</dd>
+    <dt>AI &amp; LLMs</dt>  <dd>LLM API Integration, Prompt Engineering, Token and Cost Budgeting, Output Verification</dd>
+    <dt>Methodologies</dt>  <dd>Agile (Scrum/Kanban), Code Reviews, Architecture Decision Records, Version Control</dd>
+  </dl>
+
+  <h2>Projects</h2>
+
+  <div class="entry">
+    <div class="entry-head">
+      <span class="what">VitaLink — Clinical Data Integration</span>
+      <span class="meta">github.com/matii1942/VitaLink</span>
+    </div>
+    <p class="stack">TypeScript · NestJS · PostgreSQL · Prisma · React · AWS · Terraform · Docker</p>
+    <ul>
+      <li>Reads admissions and vital signs from a <strong>legacy SOAP</strong> hospital system, normalises them into
+          PostgreSQL and scores every round against <strong>NEWS2</strong> — the Royal College of Physicians standard,
+          transcribed from the published charts and verified against four independent sources before writing code.</li>
+      <li>Clinical handover summaries written by a language model in which <strong>every figure is verified against
+          the source record</strong> before the text is served, behind a spend cap enforced before each call.</li>
+      <li>Deployed to AWS with <strong>Terraform</strong> — two Lambda functions, RDS and an hourly schedule — and
+          covered by <strong>358 automated tests</strong> across the API, the simulator and the React dashboard.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head">
+      <span class="what">ELD Trip Planner</span>
+      <span class="meta">github.com/matii1942/eld-trip-planner</span>
+    </div>
+    <p class="stack">Python · Django · pytest · JavaScript · Vitest · REST API · Render · Vercel</p>
+    <ul>
+      <li>Calculates truck routes across the U.S. and schedules driving time, rest breaks and fuel stops, enforcing
+          <strong>11 FMCSA regulations</strong> — the 6 Hours-of-Service limits of Part 395.3 plus 5 on duty time,
+          duty-status records and inspections. Django REST API on Render, JavaScript front end on Vercel.</li>
+      <li>Tested with <strong>56 automated tests</strong> across both stacks: 27 in pytest, holding the
+          Hours-of-Service engine at <strong>91% coverage</strong>, and 29 in Vitest at 100% on the front-end
+          log-sheet modules.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head">
+      <span class="what">E-Commerce Web Application</span>
+      <span class="meta">github.com/matii1942/E-commerce</span>
+    </div>
+    <p class="stack">JavaScript · Express.js · Bootstrap · Render</p>
+    <p class="compact">Storefront with a <strong>37-product catalogue</strong> across three categories, served by an
+      Express API and rendered with vanilla JavaScript — no framework between the code and the DOM. Cart persists in
+      the browser between pages with add, remove, empty and checkout, plus client-side filtering; live on Render.</p>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head">
+      <span class="what">Neon Swarm — Browser Arcade Game</span>
+      <span class="meta">github.com/matii1942/Neon-Swarm</span>
+    </div>
+    <p class="stack">JavaScript · React · HTML5 Canvas · Web Audio API</p>
+    <p class="compact">Arcade shooter running at <strong>60 fps</strong> on HTML5 Canvas — <strong>40 enemies</strong>
+      on curved flight paths, 4 power-up types, and a game loop, collision detection and state machine written from
+      scratch without a game engine. The simulation layer is kept out of React so re-renders never touch the frame
+      loop; published on itch.io.</p>
+  </div>
+
+  <h2>Professional Experience</h2>
+
+  <div class="entry">
+    <div class="entry-head">
+      <span class="what">Freelance Full Stack Developer — Law Firm (client project)</span>
+      <span class="meta">2026 – Present</span>
+    </div>
+    <ul>
+      <li>Designed and shipped a website giving prospective clients a clear way to find and contact a lawyer,
+          including an intake flow where visitors describe their case before being matched — handling confidential
+          information with care and limiting what is collected.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head">
+      <span class="what">Data Management &amp; Functional Support — Clínica Espora, ICU</span>
+      <span class="meta">Feb 2014 – 2025</span>
+    </div>
+    <ul>
+      <li>Maintained clinical records for an intensive care unit handling <strong>up to 20 patients per day</strong>,
+          keeping admission, discharge and treatment data accurate as it changed shift by shift.</li>
+      <li>Supported traceability and documentation processes relied on daily by medical staff, querying and
+          maintaining the unit's records in MySQL.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head">
+      <span class="what">Digital Operations Assistant &amp; Web Maintenance — Invid Computers</span>
+      <span class="meta">May 2019 – 2021</span>
+    </div>
+    <p class="compact">Updated website content, product listings and promotional material across the company's
+      digital platforms, running the publishing, maintenance and reporting workflows behind them.</p>
+  </div>
+
+  <h2>Education &amp; Languages</h2>
+  <dl class="skills">
+    <dt>Education</dt> <dd>Systems Analysis — ISFT N° 172 (in progress) · Full Stack Web Development — UTN · Professional Nurse (prior career)</dd>
+    <dt>Languages</dt> <dd>Spanish — Native · English — Advanced (C1)</dd>
+  </dl>
+
+</div>
+</body>
+</html>

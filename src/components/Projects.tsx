@@ -18,6 +18,16 @@ interface Project {
 
 const projects: Project[] = [
   {
+    title: 'VitaLink',
+    description:
+      'Reads admissions and vital signs from a hospital legacy SOAP system and scores every round against the NEWS2 early-warning standard, so deterioration is not left waiting for a shift change. 358 automated tests, deployed to AWS with Terraform, and clinical summaries from a language model verified figure by figure against the record.',
+    url: 'https://github.com/matii1942/VitaLink',
+    category: 'full',
+    status: 'Source',
+    tags: ['TypeScript', 'NestJS', 'PostgreSQL', 'React', 'AWS'],
+    cta: 'View source',
+  },
+  {
     title: 'ELD Trip Planner',
     description:
       'Calculates truck routes across the US and schedules driving time, rest breaks and fuel stops under 11 FMCSA regulations. Django API on Render, JavaScript front end on Vercel, 56 automated tests across both stacks.',
@@ -30,23 +40,13 @@ const projects: Project[] = [
   {
     title: 'E-Commerce Application',
     description:
-      'Storefront with a 50-product catalog, cart and dynamic data handling from the backend, built on a component architecture and responsive across every view.',
+      'Storefront with a 37-product catalogue across three categories, served by an Express API and rendered with vanilla JavaScript and Bootstrap. Cart state persists in the browser between pages, with add, remove, empty and checkout, and client-side filtering by category.',
     url: 'https://e-commerce-1-wcxq.onrender.com',
-    sourceUrl: 'https://github.com/matii1942/ecommerce',
+    sourceUrl: 'https://github.com/matii1942/E-commerce',
     category: 'full',
     status: 'Live',
-    tags: ['React', 'Node.js', 'MongoDB', 'Render'],
+    tags: ['JavaScript', 'Express.js', 'Bootstrap', 'Render'],
     cta: 'View project',
-  },
-  {
-    title: 'Task Manager',
-    description:
-      'Full CRUD task management across 15 REST endpoints backed by MongoDB, with reusable TypeScript components handling form validation, state and API errors.',
-    url: 'https://github.com/matii1942',
-    category: 'full',
-    status: 'Source',
-    tags: ['React', 'TypeScript', 'Express.js', 'MongoDB'],
-    cta: 'View source',
   },
   {
     title: 'Neon Swarm',

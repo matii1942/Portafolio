@@ -21,7 +21,7 @@ const roles: Role[] = [
     org: 'Clínica Espora · Intensive Care Unit',
     when: '2014 — 2025',
     description:
-      'Maintained clinical data and database workflows for an ICU, supporting traceability, digital documentation and information quality relied on daily by medical staff, and contributing process improvements in an environment where data accuracy is critical.',
+      'Maintained clinical records for an intensive care unit handling up to 20 patients per day, keeping admission, discharge and treatment data accurate as it changed shift by shift. Supported traceability and documentation processes relied on daily by medical staff, querying and maintaining the unit records in MySQL.',
   },
   {
     title: 'Digital Operations & Web Maintenance',
